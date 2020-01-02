@@ -37,10 +37,10 @@ df = df[['y','job', 'marital', 'education', 'default', 'housing', 'loan','contac
        'euribor3m', 'nr.employed']]
 
 # let's use Multiple Correspondance Analysis t categorical data
-"pip install prince"
+# "pip install prince"
 import prince
-" We creat a sub-data that contai only categorical data
-" Our Purpose it to transoform these attributes to continious data so that we could use euclidien distance
+# We creat a sub-data that contai only categorical data
+# Our Purpose it to transoform these attributes to continious data so that we could use euclidien distance
 cat_df = df.iloc[:,1:10]
 mca_df = prince.MCA(n_components = 30,
                     n_iter = 4,
