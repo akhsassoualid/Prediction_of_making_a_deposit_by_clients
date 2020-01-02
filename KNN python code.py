@@ -64,7 +64,7 @@ scaled_newdf = pd.DataFrame(scaled_newdf, columns=newdf.columns[1:])
 scaled_newdf['y'] = newdf['y']
 scaled_newdf.columns = ['age','campaign','pdays','previous','emp.var.rate','cons.price.idx','cons.conf.idx','euribor3m','nr.employed',
                         'cp0','cp1','cp2','cp3','cp4','cp4','cp5','cp6','cp7','cp8','cp9','cp10','cp11','cp12','cp13','cp14','cp15','cp16','cp17','cp18',
-                        'cp19','cp20','cp21','cp22','cp23','cp24','cp25','cp26','cp27','cp28','y']
+                        'cp19','cp20','cp21','cp22','cp23','cp24','cp25','cp26','cp27','cp28','y'] # By cp we mean the component of the Multiple correspondence analysis
 
 # Split the data into train and test
 from sklearn.model_selection import train_test_split
@@ -99,42 +99,3 @@ plt.legend()
 plt.xlabel('Number of Neighbors')
 plt.ylabel('Accuracy')
 plt.show()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-ax = mca.plot_coordinates(
-     X=cat_df,
-     ax=None,
-     figsize=(6, 6),
-     show_row_points=True,
-     row_points_size=10,
-     show_row_labels=False,
-     show_column_points=True,
-     column_points_size=30,
-     show_column_labels=False,
-     legend_n_cols=1)
-ax.get_figure()
-
-
-
-
-
-
-
-
-
-
-
