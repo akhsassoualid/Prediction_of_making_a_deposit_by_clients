@@ -12,3 +12,6 @@ The classifiers used are :
  - Bagging classifier
  - Random Forest classifier
  -Logistic Regression
+ 
+The reference of the data and the description of its features is found in the following link:
+        https://archive.ics.uci.edu/ml/datasets/Bank+Marketing
